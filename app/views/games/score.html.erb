@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>RESULT</h1>
+
+  <% if @included %>
+    <% if @english_word %>
+      <p style="text-align: center; font-size: 24px;">Congratulations! <%= @word %> is a valid English word!</p>
+    <% else %>
+      <p style="text-align: center; font-size: 24px;">Sorry but <%= @word %> does not seem to be a valid English word...</p>
+    <% end %>
+  <% else %>
+    <p style="text-align: center; font-size: 24px;">Sorry but <%= @word %> can't be built out of <%= @letters.join(", ") %></p>
+  <% end %>
+
+  <%= link_to "Go back", new_path %>
+</div>

@@ -1,0 +1,64 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+#letters {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#letters p {
+  font-style: oblique;
+  background-color: #3398dc;
+  color: #eee;
+  margin: 0 8px;
+  padding: 4px 12px;
+  font-size: 2em;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+h1 {
+  text-align: center;
+  color: purple;
+}
+
+// ---- form
+
+.my_form{
+  position: relative;
+}
+
+.my_form .my_input {
+  height: 3.5rem;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E7E7E7;
+  border-radius: 6px;
+  padding-left: 16px;
+}
+
+.my_form .my_input:focus {
+  border: 1px solid purple;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+input[type=submit] {
+  width: 100px;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+  background-color: purple;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  color: #ededed;
+  font-weight: bold;
+}
